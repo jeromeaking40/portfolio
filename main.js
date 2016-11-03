@@ -6,7 +6,7 @@ Router.$inject = ['$routeProvider'];
 function Router($routeProvider) {
     $routeProvider
         .when("/", {
-            templateUrl: "home.html"
+            templateUrl: "views/home.html"
         })
         .when("/about", {
             templateUrl: "views/about.html"

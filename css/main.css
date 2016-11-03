@@ -1,4 +1,21 @@
 p {
-  color: orange; }
+  font-family: 'Lato', sans-serif; }
+
+h1 {
+  font-family: 'Kumar One Outline', cursive; }
+
+a {
+  font-family: 'Lato', sans-serif; }
+
+.brand-logo {
+  font-family: 'Kumar One Outline', cursive; }
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+main {
+  flex: 1 0 auto; }
 
 /*# sourceMappingURL=main.css.map */

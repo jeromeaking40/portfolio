@@ -2,9 +2,10 @@
 <html ng-app='Portfolio'>
     <head>
         <meta charset="utf-8">
-        <title>Jerome King</title>
+        <title>JEROME</title>
+        <link href="https://fonts.googleapis.com/css?family=Kumar+One+Outline|Lato" rel="stylesheet">
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.css"/>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.js"></script>
         <link rel="stylesheet" href="/css/main.css" media="screen" title="no title">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
@@ -15,12 +16,26 @@
     <body ng-controller='mainCtrl as main'>
         <div id="wrapper">
             <!--NAV-->
-            <nav class="navbar navbar-fixed-top">
-                <a class="navbar-brand" href="#/">Jerome King</a>
-                <a class="pull-right" href="#/contact">Contact</a>
-                <a class="pull-right" href="#/about">About</a>
-                <a class="pull-right" href="#/projects">Projects</a>
-                <a class="pull-right" href="#/skills">Skills</a>
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo center">JK</a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li>
+                            <a href="#/contact">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#/about">About</a>
+                        </li>
+                    </ul>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li>
+                            <a href="#/projects">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#/skills">Skills</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
             <!--END OF NAV-->
 
@@ -31,24 +46,22 @@
             <!--END OF PAGE CONTENT-->
 
             <!--FOOTER-->
-            <div id="footer">
-                <footer class="navbar-default">
-                    <div class="container-fluid text-center">
-                        <h5>Designed and Developed by Jerome King</h5>
-                        <a href="http://www.github.com/jeromeaking40">
-                            <i class="fa fa-github"></i>
-                        </a>
-                        <a href="http://www.linkedin.com/in/jerome-king-7b6b8a92">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                    </div>
-                </footer>
-            </div>
+            <footer class="footer">
+            <div class="container">
+              <h5>Designed and Developed by Jerome King</h5>
+              <a href="http://www.github.com/jeromeaking40">
+                  <i class="fa fa-github"></i>
+              </a>
+              <a href="http://www.linkedin.com/in/jerome-king-7b6b8a92">
+              <i class="fa fa-linkedin"></i>
+              </a>
+          </div>
+        </footer>
             <!--END OF FOOTER-->
 
         </div>
 
-            <!--JAVASCRIPT-->
-            <script src='/controller/mainCtrl.js'></script>
-        </body>
-    </html>
+        <!--JAVASCRIPT-->
+        <script src='/controller/mainCtrl.js'></script>
+    </body>
+</html>
