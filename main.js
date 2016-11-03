@@ -6,15 +6,22 @@ Router.$inject = ['$routeProvider'];
 function Router($routeProvider) {
     $routeProvider
         .when("/", {
-            templateUrl: "index.html"
+            templateUrl: "home.html"
         })
         .when("/about", {
-            templateUrl: "about.html"
+            templateUrl: "views/about.html"
         })
         .when("/contact", {
-            templateUrl: "contact.html"
+            templateUrl: "views/contact.html"
         })
         .when("/projects", {
-            templateUrl: "projects.html"
+            templateUrl: "views/projects.html"
+        })
+        .when("/skills", {
+            templateUrl: "views/skills.html"
+        })
+        .otherwise({
+            redirectTo: "/"
         });
+
 }
